@@ -5,20 +5,24 @@
 <h1 class = mt-5 >Tablero de Ajedrez</h1>
 <hr>
 
-{% for i in range(numero):%}
-<tr>
-    {%for j in range(numero)%}
-    <td class="color1"></td>
-    <td class="color2"></td>
-    {% endfor%}
-</tr>
-<tr>
-    {%for i in range(numero)%}
-    <td class="color2"></td>
-    <td class="color1"></td>
-    {% endfor%}
-</tr>
+</div>
+    <table class="tablero">
+        {% for i in range(numero):%}
+            <tr>
+                {%for j in range(numero)%}
+                <td class="color1"></td>
+                <td class="color2"></td>
+                {% endfor%}
+            </tr>
+            <tr>
+                {%for i in range(numero)%}
+                <td class="color2"></td>
+                <td class="color1"></td>
+                {% endfor%}
+            </tr>
 
-{% endfor%}
+        {% endfor%}
+    </table>
+</div>
 
 {% endblock %}

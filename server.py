@@ -6,7 +6,7 @@ app = Flask(__name__)
 def html_inicio():
     return render_template('tablero1.html')
 
-#2. http://localhost:5000/4: debería mostrar un tablero de ajedrez de 8 por 4
+# 2. http://localhost:5000/4: debería mostrar un tablero de ajedrez de 8 por 4
 @app.route('/<int:num>')
 def num_tablero(num):
     return render_template ('tablero2.html',numero=num)

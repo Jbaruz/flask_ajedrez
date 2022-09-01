@@ -4,7 +4,25 @@
 {% block contenido %}
 <h1 class = mt-5 >Tablero de Ajedrez</h1>
 <hr>
+</div>
+    <table class="tablero">
+        {% for i in range(4):%}
+            <tr>
+                {%for j in range(4)%}
+                <td class="color1"></td>
+                <td class="color2"></td>
+                {% endfor%}
+            </tr>
+            <tr>
+                {%for i in range(4)%}
+                <td class="color2"></td>
+                <td class="color1"></td>
+                {% endfor%}
+            </tr>
 
+        {% endfor%}
+    </table>
+</div>
 
 
 {% endblock %}
