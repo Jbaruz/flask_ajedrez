@@ -1,5 +1,5 @@
 {% extends "base.html" %}
-{% block titulo %} Tablero 8x4{% endblock %}
+{% block titulo %} Tablero XxY{% endblock %}
 
 {% block contenido %}
 <h1 class = mt-5 >Tablero de Ajedrez</h1>
@@ -7,15 +7,15 @@
 
 </div>
     <table class="tablero">
-        {% for i in range(numero2):%}
+        {% for i in range(num1):%}
             <tr>
-                {%for j in range(numero)%}
+                {%for j in range(num2)%}
                 <td class="color1"></td>
                 <td class="color2"></td>
                 {% endfor%}
             </tr>
             <tr>
-                {%for i in range(numero)%}
+                {%for i in range(num2)%}
                 <td class="color2"></td>
                 <td class="color1"></td>
                 {% endfor%}
